@@ -2,7 +2,7 @@
 set -euxo pipefail
 
 # For tmux
-sudo apt install -y apt install autotools-dev automake libevent-dev ncurses-dev
+sudo apt install -y autotools-dev automake libevent-dev ncurses-dev
 # Required tmux 2.6 or later version
 sudo apt install -y tmux
 
