@@ -4,7 +4,6 @@ set -euxo pipefail
 # Install compile tmux dependencies
 sudo apt install -y autotools-dev automake libevent-dev ncurses-dev
 # Required tmux 2.6 or later version
-#sudo apt install -y tmux
 
 # Install tmux 2.8
 TMUX_VERSION='2.8'
