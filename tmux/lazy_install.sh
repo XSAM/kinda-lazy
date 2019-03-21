@@ -1,6 +1,8 @@
 #! /usr/bin/env bash
 set -euxo pipefail
 
+DIR=${PWD}
+
 # Install compile tmux dependencies
 sudo apt install -y autotools-dev automake libevent-dev ncurses-dev
 # Required tmux 2.6 or later version
@@ -19,6 +21,7 @@ sudo make install
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Set conf
+cd $DIR
 cp .tmux.conf ~/.tmux.conf
 
 set +x
